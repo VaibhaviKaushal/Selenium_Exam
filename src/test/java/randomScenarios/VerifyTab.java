@@ -16,12 +16,12 @@ public class VerifyTab extends BrowserUtility{
 		waitForPageElementToVisible(driver.findElement(By.id("AllTab_Tab")));
 		driver.findElement(By.id("AllTab_Tab")).click();
 		
-		//waitForPageElementToVisible(driver.findElement(By.xpath("//input[@name='customize']")));
+		waitForPageElementToVisible(driver.findElement(By.xpath("//input[@name='customize']")));
 		driver.findElement(By.xpath("//input[@name='customize']")).click();
 		
 		waitForPageElementToVisible(driver.findElement(By.id("duel_select_1")));
 		Select remove= new Select(driver.findElement(By.id("duel_select_1")));
-		remove.selectByVisibleText("Subscriptions");
+		remove.selectByVisibleText("2");
 		
 		driver.findElement(By.xpath("//img[@class='leftArrowIcon']")).click();
 		Thread.sleep(3000);
@@ -30,6 +30,7 @@ public class VerifyTab extends BrowserUtility{
 		Thread.sleep(3000);
 		userLogOut();
 		
+		Thread.sleep(3000);
 		login();
 		
 	//Verify removed tab
