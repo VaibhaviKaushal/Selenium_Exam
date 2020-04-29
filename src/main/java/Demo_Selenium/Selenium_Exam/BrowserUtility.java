@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserUtility {
-
+				
 	public static WebDriver driver = null;
 
 	public static void launchBrowser(String sBrowser) {
@@ -84,9 +84,13 @@ public class BrowserUtility {
 		Thread.sleep(5000);
 		driver.findElement(By.id("tryLexDialogX")).click();
 	}
+
+	}
+	
+	
+	
 	
 		
-	}
 	
 
 
